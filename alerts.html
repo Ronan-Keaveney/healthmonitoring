@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" onclick="navigate('home')">Home</a>
+        <a href="patients.html" onclick="navigate('patients')">Patients</a>
+        <a href="alerts.html" onclick="navigate('alerts')">Alerts</a>
+    </div>
+    <div id="content">
+        <h1>Alerts</h1>
+        <ul id="alertsPatients">
+            <!-- Patient data with alert buttons will be inserted here by JavaScript -->
+        </ul>
+    </div>  
+
+    <script src="script.js"></script>
+    <script>
+        // When the alerts page is loaded, fetch patients to display with alert buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            fetchPatients();
+        });
+    </script>
+</body>

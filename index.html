@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Monitoring System</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" onclick="navigate('home')">Home</a>
+        <a href="patients.html" onclick="navigate('patients')">Patients</a>
+    </div>
+    
+    <h1>Health Monitoring Dashboard</h1>
+
+    <div id="patientData"></div>
+
+    <form id="addPatientForm">
+        <input type="text" id="patientName" placeholder="Patient Name" required>
+        <input type="number" id="patientAge" placeholder="Age" required>
+        <input type="text" id="patientCondition" placeholder="Condition" required>
+        <input type="number" id="emergencyContact" placeholder="Emergency Contact" required>
+        <button type="submit">Add Patient Data</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
